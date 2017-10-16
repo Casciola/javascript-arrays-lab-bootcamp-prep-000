@@ -8,12 +8,17 @@ function destructivelyAppendKitten(name) {
 };
 
 function destructivelyPrependKitten(name) {
-
+  kittens.unshift(name);
+  return kittens;
 };
 
 function destructivelyRemoveLastKitten() {
-
+  return kittens = kittens.pop();
 };
+
+function destructivelyRemoveFirstKitten() {
+  return kittens = kittens.slice();
+}
 
 function appendKitten(name) {
 
